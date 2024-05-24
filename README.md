@@ -8,7 +8,7 @@ The PDDL (Planning Domain Definition Language) Translator is a tool for generati
 
 The PDDL Translator offers a range of functionalities, including:
 
-Pddl problems generation: Generate pddl problems used for trace-alignement task.
+Pddl problems generation: Generate pddl problems used for trace-alignement task. <br />
 Deterministic Noise Injection: Adds noise to the traces to mimic real-world data imperfections. This injection is subject to customizable parameter used for specifying the exact percentage of noise for each of the possible noise injection moves. The move is also subject to a amount that specify the noise injection move weight.
 Probabilistic Noise Injection: Injects noise in a probabilistic manner for more controlled simulations.
 Probabilistic Noise Injection: Injects noise in a probabilistic manner for more controlled simulations. This injection is subject to customizable parameter used for specifying the biases for each of the possible noise injection moves. The move is also subject to a amount that specify the noise injection move weight, sampled at random between 1 and a max amount.
