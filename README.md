@@ -3,7 +3,8 @@
 # Overview
 
 The PDDL (Planning Domain Definition Language) Translator <br />
-is a tool for generating trace-alignement-PDDL problems from event logs in XES format and Declare models in DOT format, utilizing the PM4Py and PyDot libraries.
+is a tool for generating trace-alignement-PDDL problems from event logs in XES format and Declare models in DOT format,<br />
+utilizing the PM4Py and PyDot libraries.
 
 # Features
 
