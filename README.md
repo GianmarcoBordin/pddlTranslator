@@ -31,7 +31,7 @@ To install the necessary dependencies, run:
 - pip install pydot
 - pip install pm4py
 
-## Customizable global variables (the translator requires no input at launch phase, you can customize your choices using random variables)
+## Customizable global variables <br />(the translator requires no input at launch phase, you can customize your choices using random variables)
 
 ### You have to specify the paths to the declare file,the log file and the domain.pddl file
 - xes_file = "path_to_the_xes_log_file.xes" <br />
