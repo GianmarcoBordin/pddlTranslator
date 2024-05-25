@@ -3,8 +3,9 @@
 ## Overview
 
 The PDDL (Planning Domain Definition Language) Translator <br />
-is a tool for generating trace-alignement-PDDL problems from event logs in XES format and Declare models in DOT format,<br />
-utilizing the PM4Py and PyDot libraries.
+is a tool for generating lifecycle costrained trace alignement PDDL problems from event logs in XES format and Declare models in DOT format,<br />
+utilizing the PM4Py and PyDot libraries.<br />
+The translator produces pddl problems used in conjunction with the domain file contained in the pddl_files directory to make a planner-based trace alignement that<br /> takes into account also the lifecycle of each activity found in the log
 
 ## Features
 
@@ -30,7 +31,7 @@ To install the necessary dependencies, run:
 - pip install pydot
 - pip install pm4py
 
-## Usage
+## Customizable global variables (the translator requires no input at launch phase, you can customize your choices using random variables)
 
 ### You have to specify the paths to the declare file,the log file and the domain.pddl file
 - xes_file = "path_to_the_xes_log_file.xes" <br />
@@ -79,6 +80,7 @@ To install the necessary dependencies, run:
 ### You have the possibility to to set the list of amount for each move
 - amount_move_1 = amount_move_2 = amount_move_3 = amount_move_4 = 2 <br />
 
+## Usage
 
 ### You have the following option to set while the program is running:<br />
 
@@ -87,18 +89,26 @@ To install the necessary dependencies, run:
  - noise_option = You want to add Noise <br />
 
  - noise_type_option = You want to add Noise probabilistically or deterministically <br />
-    
-## How to Run
+ 
+## How to Run (Assumed you already have fast-downward installed on your machine)
+
+### Launch the script
 
 The PDDL Translator provides several commands for different functionalities.<br />
 Below are detailed instructions for running various tasks:<br />
+
+Input: No input
 
 python3 main.py <br />
 
 Output: <br />
 
 - noisy_log.xes: Contains the noised log. <br />
-- problem_name.pddl: Contains the problem generated flagged with Noisy if the noise is injected <br />
+- problem_name.pddl: Contains the problem generated flagged with Noisy if the noise is injected placed in the previously specified problems directory <br />
+
+### Launch lifecycle costrained trace alignement planning search
+
+./fast-downward.py scripts/{domain_name}.pddl scripts/{problem_name}_{problem_number}_Noisy.pddl --search "astar(blind())"
 
 ## Contributions 
 
