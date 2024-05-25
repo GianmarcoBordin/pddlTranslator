@@ -5,7 +5,7 @@
 The PDDL (Planning Domain Definition Language) Translator <br />
 is a tool for generating lifecycle costrained trace alignement PDDL problems from event logs in XES format and Declare models in DOT format
 utilizing the PM4Py and PyDot libraries.<br />
-The translator produces pddl problems used in conjunction with the domain file contained in the pddl_files directory to make a planner-based trace alignement that<br /> takes into account also the lifecycle of each activity found in the log
+The translator produces pddl problems used in conjunction with the domain file contained in the pddl_files directory to make a planner-based trace alignement that takes into account also the lifecycle of each activity found in the log
 
 ## Features
 
