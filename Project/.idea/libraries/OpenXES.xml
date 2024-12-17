@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="OpenXES">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Aligner/Plan-based_Data_Aware_Declarative_Conf_Checker/lib/OpenXES.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

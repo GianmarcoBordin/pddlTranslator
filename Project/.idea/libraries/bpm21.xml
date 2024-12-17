@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="bpm21">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Atomizer/bpm21.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
